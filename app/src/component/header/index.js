@@ -1,10 +1,15 @@
 // import React, React Native
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, useColorScheme} from 'react-native';
+
+// Import Styles
+import gStyles from '../../tool/gStyles';
 
 function Header() {
+  const isDarkMode = useColorScheme() === 'dark';
   return (
-    <View style={styles.container}>
+    <View
+      style={[styles.container, isDarkMode ? gStyles.bgDark : gStyles.bgLight]}>
       <Text style={styles.text}>Feature</Text>
     </View>
   );
@@ -17,7 +22,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     height: 60,
-    backgroundColor: '#fff',
     shadowOpacity: 1,
   },
   text: {
