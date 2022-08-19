@@ -3,12 +3,12 @@ import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
 
 // Import Internal Component
-import Header from '../../component/header';
+import HeaderGoBack from '../../component/header-goback';
 
 function RemoteConfig() {
   return (
     <View style={styles.container}>
-      <Header />
+      <HeaderGoBack />
       <View style={styles.containerContent}>
         <Text>Firebase Remote Config</Text>
         <Text>Key --- Value</Text>

@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator();
 function Navigator() {
   return (
     <Stack.Navigator
-      initialRouteName="RemoteConfig"
+      initialRouteName="Home"
       screenOptions={{
         headerShown: false,
       }}>
